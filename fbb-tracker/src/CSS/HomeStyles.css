@@ -1,0 +1,86 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+}
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e5891d;
+  width: 50vw;
+  height: 100vh;
+}
+
+.titleTextLeft {
+  font-size: calc(0.85em + 2vmin);
+  font-family: Work Sans;
+  color: #e5891d;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.titleTextRight {
+  font-size: calc(0.85em + 2vmin);
+  font-family: Work Sans;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.button {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1e3046;
+  font-size: calc(0.65em + 0.75vmin);
+  font-family: Work Sans;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #29425f;
+}
+
+.button:active {
+  background-color: #152130;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.placeholder {
+  height: 10px;
+  width: 10px;
+}
