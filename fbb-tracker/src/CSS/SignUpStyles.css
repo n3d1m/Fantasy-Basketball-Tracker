@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.parent2 {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titleText {
+  font-size: calc(0.85em + 2vmin);
+  font-family: Work Sans;
+  color: #e5891d;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.placeholder {
+  height: 10px;
+  width: 10px;
+}
+
+.formContainer2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 2px solid #e5891d;
+}
+
+.inputStyle2 {
+  width: 25vw;
+  outline: none;
+  border: none;
+  background-color: white;
+  color: #1e3046;
+  font-family: Work Sans;
+  padding-left: 0.5vw;
+}
+
+input.inputStyle2::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #1e3046;
+  opacity: 1; /* Firefox */
+  font-family: Work Sans;
+}
+
+input.inputStyle2:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #1e3046;
+  font-family: Work Sans;
+}
+
+input.inputStyle2::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #1e3046;
+  font-family: Work Sans;
+}
+
+.textCol {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.middleText {
+  font-size: calc(0.75em + 1.5vmin);
+  font-family: Work Sans;
+  color: #1e3046;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-weight: bolder;
+}

@@ -1,50 +1,29 @@
 import React from "react";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link, Route, Switch, Router, BrowserRouter } from "react-router-dom";
 import HomePage from "./Components/Home";
+import SignUpPageBasic from "./Components/SignUpBasic";
+import SignUpPageEspn from "./Components/SignUpEspn";
 
 const Home = () => <HomePage />;
 
-const Category = () => (
-  <div>
-    <h2>Category</h2>
-  </div>
-);
+const SignUpBasic = () => <SignUpPageBasic />;
 
-const Products = () => (
-  <div>
-    <h2>Products</h2>
-  </div>
-);
+const SignUpEspn = () => <SignUpEspn />;
 
 export default function App() {
   return (
-    <div>
-      {/* <nav className="navbar navbar-light">
-        <ul className="nav navbar-nav">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/category">Category</Link>
-          </li>
-          <li>
-            <Link to="/products">Products</Link>
-          </li>
-        </ul>
-      </nav> */}
-
-      {/* Route components are rendered if the path prop matches the current URL */}
-      <Route path="/">
-        <Home />
-      </Route>
-      <Route path="/category">
-        <Category />
-      </Route>
-      <Route path="/products">
-        <Products />
-      </Route>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/signup/basic">
+          <SignUpBasic />
+        </Route>
+        <Route path="/signup/espn">
+          <SignUpPageEspn />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
-
-//export default App;
